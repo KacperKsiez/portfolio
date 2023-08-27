@@ -1,11 +1,11 @@
 .header {
-	position: absolute;
+	position: fixed;
 
 	top: 0;
 	left: 0;
 
 	width: 100vw;
-	height: 10rem;
+	height: 8rem;
 
 	z-index: 10;
 
@@ -13,7 +13,12 @@
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 2rem 8rem;
+	padding: 1.5rem 8rem;
+
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+
+	transition: 0.3s;
 
 	&__logo {
 		height: 100%;
@@ -72,6 +77,38 @@
 
 			transform: translateX(2rem);
 			background-size: 100% 100%;
+		}
+	}
+
+	&--scrolled {
+		.header__list-link {
+			color: #111;
+
+			&::before {
+				background: linear-gradient($color-primary-light, $color-primary-light) no-repeat;
+				background-size: 3px 100%;
+			}
+			&:hover::before {
+				border-radius: 1rem;
+
+				transform: translateX(2rem);
+				background-size: 100% 100%;
+			}
+		}
+
+		background-color: snow;
+
+		.header__image {
+			display: none;
+		}
+		.header__image--dark {
+			display: block;
+		}
+	}
+
+	&__image {
+		&--dark {
+			display: none;
 		}
 	}
 }

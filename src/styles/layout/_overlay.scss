@@ -1,10 +1,9 @@
 .overlay {
 	position: relative;
 
-	height: 94vh;
-	border-bottom: 6px solid $color-primary;
+	height: 100vh;
 
-	background: url('../media/parrot.webp') right center no-repeat;
+	background: url('../media/parrot.webp') right 65% no-repeat;
 	background-size: auto 80vh;
 	background-color: #131215;
 
@@ -14,7 +13,7 @@
 	flex-direction: column;
 	gap: 4rem;
 
-	padding-left: 8rem;
+	padding-left: 20rem;
 
 	&__header {
 		color: $color-primary;
@@ -30,6 +29,8 @@
 		animation: fade-from-left-with-opacity 1s 0.35s backwards;
 
 		display: inline-block;
+
+		transform: translateX(-1rem);
 	}
 
 	&__h2 {
@@ -40,12 +41,30 @@
 		animation: fade-from-right-with-opacity 1s 1s backwards;
 
 		display: inline-block;
+
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-top: 2rem;
+		text-align: justify;
+	}
+
+	&__btn {
+		animation: fade-from-bottom-with-opacity 1s 1.6s backwards;
+		&:hover {
+			transform: translateY(-2px);
+
+			background-color: $color-primary;
+			box-shadow: 0 0 1.5rem $color-primary; // Dodajemy delikatny cień dla efektu neonu
+		}
+		&:focus {
+			transform: translateY(1px);
+		}
 	}
 
 	&__scroll-btn {
 		position: absolute;
 
-		bottom: 0;
+		bottom: 2rem;
 		left: 0;
 		right: 0;
 
@@ -58,8 +77,10 @@
 
 		transition: 0.3s;
 
-		&:hover {
-			transform: scale(1.1);
+		transform: translateX(-50%);
+		animation: floatAnimation 2s ease-in-out infinite;
+		a {
+			color: rgba(white, 0.2);
 		}
 	}
 }
