@@ -1,3 +1,5 @@
+@import '/node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
+
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
@@ -9,6 +11,7 @@
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/overlay';
 
 @import 'components/buttons';
 @import 'components/card';

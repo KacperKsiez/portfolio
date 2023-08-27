@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Document</title>
+		<meta name="description" content="" />
 	</head>
 	<body>
-		<div class="header"></div>
-		<h1>STRONA GŁÓWNA</h1>
-		<a href="html/contact.html">CLICK TO CONTACT</a>
+		<header class="header">
+			<div class="header__logo">
+				<!-- <img src="./media/logo.png" alt="" /> -->
+				<img src="./media/logo-blue.png" alt="" />
+			</div>
+
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__list-item"><a class="link header__list-link">Home</a></li>
+					<li class="header__list-item"><a class="link header__list-link">Portfolio</a></li>
+					<li class="header__list-item"><a class="link header__list-link">O mnie</a></li>
+					<li class="header__list-item"><a class="link header__list-link">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="overlay">
+			<div class="overlay__header">
+				<h1 class="overlay__h1">Tworzenie stron WWW</h1>
+				<h2 class="overlay__h2">Zajmuję się projektowaniem stron internetowych, pozycjonowaniem oraz wizytówką w Google, zbuduj ze mną swoją markę</h2>
+			</div>
+			<button class="btn btn--overlay">
+				<a href="#oferta">Zobacz realizacje</a>
+			</button>
+
+			<button class="overlay__scroll-btn">
+				<a href="#">
+					<i class="bi bi-chevron-down"></i>
+				</a>
+			</button>
+			<div class="box"></div>
+		</section>
 	</body>
 </html>
