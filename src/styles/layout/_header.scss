@@ -1,6 +1,15 @@
 .header {
 	position: fixed;
 
+	pointer-events: none;
+
+	&__logo {
+		pointer-events: all;
+	}
+	&__nav {
+		pointer-events: all;
+	}
+
 	top: 0;
 	left: 0;
 
@@ -81,6 +90,8 @@
 	}
 
 	&--scrolled {
+		pointer-events: all;
+
 		.header__list-link {
 			color: #111;
 
