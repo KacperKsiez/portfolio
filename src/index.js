@@ -1,8 +1,12 @@
 import './styles/main.scss';
 import { NavSwitcher } from './scripts/navSwitch';
 import '../node_modules/particles.js/particles';
+import { MovingOverlayImage } from './scripts/movingOverlayImage';
+import { ToggleGoUpArrowOnScroll } from './scripts/toggleGoUpArrowOnScroll';
 
 new NavSwitcher().init();
+new MovingOverlayImage().init();
+new ToggleGoUpArrowOnScroll().init();
 
 // eslint-disable-next-line no-undef
 particlesJS('overlay', {

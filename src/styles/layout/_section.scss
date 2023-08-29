@@ -1,0 +1,17 @@
+.section {
+	padding: 8rem 2rem;
+
+	&__content {
+		width: min(140rem, 100%);
+
+		&--xl {
+			width: min(200rem, 100%);
+		}
+
+		margin: 5rem auto 0 auto;
+	}
+
+	&--gray {
+		background-color: #f4f4f4;
+	}
+}

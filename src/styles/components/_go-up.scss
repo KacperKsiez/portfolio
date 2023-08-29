@@ -1,0 +1,33 @@
+.go-up {
+	position: fixed;
+	border-radius: 5px;
+	padding: 1.3rem;
+	background-color: lightgray;
+	z-index: 10;
+
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(3rem) scale(0.5);
+
+	transition: 0.3s;
+
+	&--active {
+		opacity: 1;
+		pointer-events: all;
+		transform: translateY(0) scale(1);
+		@include lightShadow;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	bottom: 2rem;
+	right: 2rem;
+	cursor: pointer;
+
+	i {
+		font-size: 2.6rem;
+		color: $color-primary;
+	}
+}

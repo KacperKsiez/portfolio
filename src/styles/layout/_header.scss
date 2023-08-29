@@ -91,6 +91,7 @@
 
 	&--scrolled {
 		pointer-events: all;
+		@include lightShadow;
 
 		.header__list-link {
 			color: #111;

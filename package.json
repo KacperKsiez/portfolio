@@ -37,6 +37,7 @@
 	},
 	"dependencies": {
 		"bootstrap-icons": "^1.10.5",
+		"gsap": "^3.12.2",
 		"particles.js": "^2.0.0"
 	}
 }

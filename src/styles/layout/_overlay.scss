@@ -3,10 +3,8 @@
 
 	height: 100vh;
 
-	// background: url('../media/parrot.webp') right 65% no-repeat;
-
 	background-size: auto 80vh;
-	background-color: #131215;
+	background-color: $color-background;
 
 	display: flex;
 	align-items: start;
@@ -28,6 +26,13 @@
 		z-index: 1;
 		cursor: pointer;
 		pointer-events: none;
+
+		transform: translateY(4rem);
+	}
+
+	&__content {
+		pointer-events: none;
+		z-index: 1;
 	}
 
 	&__header {
@@ -64,8 +69,10 @@
 	}
 
 	&__btn {
-		animation: fade-from-bottom-with-opacity 1s 1.6s backwards;
+		margin-top: 3.5rem;
 		z-index: 1;
+		animation: fade-from-bottom-with-opacity 1s 1.6s backwards;
+		pointer-events: all;
 
 		&:hover {
 			transform: translateY(-2px);
